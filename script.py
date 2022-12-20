@@ -52,6 +52,6 @@ while True:
     logger.setLevel(logging.INFO)
     running_instances_info()
 
-    logger.info('The Active instances for the region:' + str(region) + '')
+    logger.info('Active instances for region:' + str(region) + '')
 
     time.sleep(int(runtime))
