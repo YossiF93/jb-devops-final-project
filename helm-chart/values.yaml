@@ -1,0 +1,12 @@
+image:
+  repository: frenzy669/jb-devops-final-project
+  tag: 126
+deployment:
+  labels: jb-devops-final-project
+  selector: jb-devops-final-project
+service:
+  name: service-jb-devops-final-project
+  type: LoadBalancer
+  selector: jb-devops-final-project
+  port: 80
+  targetPort: 8080
